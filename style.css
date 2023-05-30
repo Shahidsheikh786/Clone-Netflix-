@@ -1,0 +1,759 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* font-family: 'Bebas Neue', sans-serif; */
+
+
+
+
+*{
+     margin:0;
+     Padding: 0;
+     list-style:none;
+     Text-decoration:none;
+     }
+     
+     body{
+          background:  #000000;
+     }
+ul{
+     display:flex;
+     justify-content: space-between;
+     align-items: center;
+        
+}
+
+.txt-DN{
+     text-decoration: none;
+     list-style: none;
+    
+}
+
+
+
+ul li a{
+     margin:0;
+     Padding: 0;
+     list-style:none;
+     Text-decoration:none;
+     color: white;
+}
+
+nav{
+     height: 5rem;
+     background: transparent;
+     color: white;
+
+     
+}
+
+ul img{
+     margin-top: 10px;
+     margin-left: 5px;
+     margin-right: 60px;
+    
+}
+.Banner{
+     height: auto;
+     width: 100vw;
+     
+     
+}
+.Banner h3{
+           color: white;
+           margin-top: 12rem;
+           
+           
+}
+.Banner h1{
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: .5rem;
+
+}
+
+
+.video video{
+     position: absolute;
+     top: 0;
+     left: 0;
+     overflow: hidden; 
+     z-index: -6;
+     height: auto;
+     width: 100vw;
+     margin-top: 5.2rem ; 
+     object-fit: cover ;
+    
+}
+
+.opacity {
+     opacity: 40%;
+     
+}
+
+.card-item{
+     
+     overflow: hidden;
+      
+     bottom: 0;
+}
+
+.card-group{
+     display: flex;
+    
+}
+
+#player{
+     width: 100vw;
+     margin-top: 4rem ;
+}
+
+.center{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+
+
+.label {
+  position: relative;
+  display: inline-block;
+  background-color: ;
+  padding: 5px 12px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  border-radius: 0;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+.label::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 80%;
+  background-color: red;
+  -webkit-transition: all 1s ease 0.5s;
+  transition: all 1s ease 0.5s;
+}
+.label input {
+  -webkit-transition: width 1s ease, opacity 0.5s ease 0.5s;
+  transition: width 1s ease, opacity 0.5s ease 0.5s;
+  opacity: 1;
+  width: 180px;
+  height: 25px;
+  border: 0;
+  outline: none;
+  color: black;
+}
+.label i {
+  position: absolute;
+  top: 11px;
+  right: 11px;
+  color: black;
+  cursor: pointer;
+}
+.label[data-state="close"] {
+  border-radius: 30px;
+  padding: 5px 5px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.label[data-state="close"]::after {
+  width: 0%;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.label[data-state="close"] i {
+  pointer-events: none;
+}
+.label[data-state="close"] input {
+  width: 28px;
+  height: 25px;
+  opacity: 0;
+  cursor: pointer;
+  -webkit-transition: opacity 0.5s ease, width 1s ease;
+  transition: opacity 0.5s ease, width 1s ease;
+  -webkit-appearance: none;
+}
+
+
+.dropdown-menu img{
+     border: none;
+     border-radius: 50%;
+}
+
+.dropdown-menu i {
+     display: flex;
+     color: blue;
+}
+
+
+.scoll-cards{
+     margin-top: 5.5rem;
+}
+
+.btn-dark{
+     background-color: black;
+}
+
+.scoll-cards h6{
+     font-size: 2rem;
+     margin: 1rem 0;
+}
+
+.watching-card {
+display: flex;
+     border: .01rem solid gray ;
+     height: 5rem;
+     border-radius: 5px;;
+     align-items: center;
+     margin: .4rem;
+}
+
+.watching-card p{
+     color: white;
+}
+
+
+.watching-card img{
+     border: none;
+     
+     
+}
+.d-flex{
+     display: flex;
+}
+
+
+#logo{
+     height: 50px;
+     width: auto;
+     color: red;
+     font-size: 2rem;
+     font-family: 'Bebas Neue', sans-serif;
+     
+}
+
+.scoll-cards .card {
+            min-width: 300px;
+       }
+       
+       }
+
+
+@media(min-width:656px){
+       
+ body{
+      background-color: red;
+      
+ }  }
+
+
+@media(min-width:656px){
+       
+.manu{
+     display: none;
+     }
+     
+     .hide-item{
+          display: none;
+     }
+     .white{
+          color: white;
+     }
+      
+    .center-item{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+    }
+      
+      .gray{
+           color:  #A8A8A8;
+      }
+      
+
+  .channel{
+       font-size: 2rem;
+       justify-content: space-between;
+       margin: 10px;
+  }
+      .channel b{
+           margin: 0 1rem;
+      }
+      
+      
+      
+      ul li a{
+           color: gray;
+      }
+      
+      
+      .active{
+           color: white;
+           font-weight: bold;
+      }
+      
+      
+      
+       .action button{
+        font-size: 25px;
+        padding: 4px;
+        border-radius: 30px;
+        background-color: #1C1D1E;
+        margin: 10px;
+   }
+   
+   .action button p{
+        margin: 5px;
+   }
+   
+   .download-item span{
+        color: #A8A8A8;
+        font-size: 12px;
+        
+   }
+   
+   .download-item img{
+   
+        height: 170px;
+   }
+   
+    .download-item{
+    
+         margin:  40px;
+          
+    }
+   
+
+ 
+   
+   .download-card img{
+        height: 80px;
+        border:.2rem solid white ;
+        border-radius: 50% ;
+        margin: 10px;
+   }
+   
+  .download-card{
+       background: #101a0f;
+  }
+   
+   
+   .list-item a , .list-item i{
+        color: gray;
+        text-decoration: none;
+        font-size: 2rem;
+        margin: 20px;
+   }
+   
+   .active-item a , .active-item i{
+        color: white;
+        font-weight: bold;
+        }
+        
+         .other-opt {
+        position: absolute;
+        bottom: 5rem;
+        flex-direction: column;
+        
+   }
+   
+   .other-opt a{
+        color: gray;
+         font-size: 2rem;
+        margin-top: 3rem;
+        text-decoration: none;
+        
+   }
+   .other-item{
+        margin-top: 1rem; 
+   }
+   
+   .manu-profile{
+        display: flex;
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+        
+   }
+   .download-card{
+        display: flex;
+        justify-content: center;
+   }
+   
+   .download-card button{
+        height: 50px;
+        
+   }
+   .download-card p{
+        font-size: 2rem;
+   }
+   
+  }
+  
+
+
+
+
+  @media(max-width:655px) {
+  
+.white{
+     color: white;
+}
+  
+       #logo {
+   
+   font-family: 'Bebas Neue', sans-serif;
+   
+   
+            
+       }
+       
+       nav ul li a{
+            font-size: 10px;
+            display: none;
+              }
+              
+              
+       #logo{
+            height: auto;
+            width:90px ;
+            padding: 0;
+            margin: 0;
+            position: absolute;
+            left: 35vw;
+            top: 10px;
+            
+
+            
+       }
+       .small-btn{
+            height: 20px;
+            width: 30px;
+            
+       }
+       nav{
+           height: 20px;
+       }
+       
+       
+       .video video{
+            height: 200px;
+            margin-top: 3rem;
+       }
+       
+       .hidden{
+            display: none;
+            
+       }
+       footer{
+            display: flex;
+            bottom: 0;
+            position: fixed;
+            height: 4rem;
+            z-index: 5;
+            background: black;
+            width: 100vw;
+      justify-content: space-between
+      ;
+
+       
+            
+       }
+       footer div {
+            margin: 20px;
+            
+            
+            
+       }
+       footer div  i {
+            margin: 0 10px ;
+            font-size: 20px;
+            
+       }
+       footer div   a{
+            text-decoration: none;
+            color: gray;
+            
+       }
+       .center{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+       }
+       
+       .active{
+            color: white;
+       }
+       .mx-btm{
+            margin-bottom: 5rem;
+       }
+       
+       .scoll-cards h6{
+            font-size: 10px;
+       }
+       
+       .card img{
+            height: 100px;
+            
+       }
+      .scoll-cards .card {
+            min-width: 100px;
+       }
+       
+       footer div {
+             margin: 10px;
+        }
+        .main-heading{
+        position: absolute;
+             left: 40vw;
+             top: 1rem;
+        }
+        
+   .download-card img{
+    border: .01rem solid white;
+    border-radius: 40%;        
+        }
+   .download-card{
+        display: flex;
+        margin-top:2rem;
+        margin-bottom: 2rem;
+        background: #101a0f;
+ 
+   }
+   
+   
+   
+   .download-card p{
+        color: white;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+   }
+   
+   .download-item{
+        width: 100vw;
+        color: white;
+        margin-top: 0;
+   }
+   
+   .mb-size{
+        color: gray;
+        font-size: 5px;
+   }
+   .manu-profile{
+        display: flex;
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+        
+   }
+   
+  
+   .list-item a , .list-item i{
+        color: gray;
+        text-decoration: none;
+        font-size: 1rem;
+        margin: 15px;
+   }
+   
+   .active-item a , .active-item i{
+        color: white;
+        font-weight: bold;
+        
+   }
+   
+   
+   .other-opt {
+        position: absolute;
+        bottom: 5rem;
+        flex-direction: column;
+        
+   }
+   
+   .other-opt a{
+        color: gray;
+        
+        margin-top: 3rem;
+        text-decoration: none;
+        
+   }
+   .other-item{
+        margin-top: 1rem; 
+   }
+   .downloader-btn{
+        margin: 2rem;
+   }
+   
+   .action{
+     margin: 14px;
+}
+
+.action p{
+     margin: 2px;
+     }
+     
+     .views {
+          color: gray;
+          font-size: 5px;
+          margin: 0 10px;
+     }
+   
+   
+   .action button{
+        font-size: 15px;
+        padding: 4px;
+        border-radius: 30px;
+        background-color: #1C1D1E;
+   }
+   
+   
+   .channel img{
+        border-radius: 50%;
+        margin: 7px;
+   }
+   
+   .channel-name b {
+        margin: 10px;
+        font-size: 12px;
+        
+   }
+   
+   .gray {
+        color: #A8A8A8 ;
+   }
+  .channel{
+       justify-content: space-between;
+  }
+  
+  .channel button{
+       padding: 5px;
+       border-radius: 20px 0 20px 0; 
+       height: 2rem;
+       width: 4rem;
+       font-size: 10px;
+  }
+  
+
+.subscribers{
+     font-size: 10px;
+}
+  }
+  .comment-card{
+       background-color: #1C1D1E ;
+       margin: 20px;
+       border-radius: 10%;
+  }
+  
+  .comment-card img{
+       border-radius: 50%;
+       height: 30px;
+       width: 30px;
+       margin: 4px;
+      
+  }
+  
+
+.comment-title{
+     margin: 3px 20px;
+     margin-top: 10px;
+}
+
+.comment{
+     justify-content: space-between;
+     padding: 1rem;
+      
+}
+.comment-text  {
+     font-size: 10px;
+     
+}
+
+.slider{
+     margin-top: 2rem;
+     margin-bottom: 0;
+}
+
+
+
+.R-channal img{
+     border-radius: 50%;
+     margin-right: 10px;
+     
+}
+
+.R-channal p{
+     margin-top: 5px;
+     margin-bottom: 0;
+}
+
+.R-channal{
+     justify-content: space-between;
+     margin: 5px 0;
+}
+
+.ch-name{
+     margin-left: 3rem;
+}
+
+
+  }
+ 
+  
+  
+   /* other */
+  @media(max-width:360px){
+        footer div {
+             margin: 10px;
+        }
+        .main-heading{
+        position: absolute;
+             left: 40vw;
+             top: 1rem;
+        }
+        
+   .download-card img{
+    border: .01rem solid white;
+    border-radius: 40%;        
+        }
+   .download-card{
+        display: flex;
+        margin-top:2rem;
+        margin-bottom: 2rem;
+        background: #101a0f;
+ 
+   }
+   
+   .download-card p{
+        color: white;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+   }
+   
+   .download-item{
+        width: 100vw;
+        color: white;
+        margin-top: 0;
+   }
+   
+   .mb-size{
+        color: gray;
+        font-size: 5px;
+   }
+   .manu-profile{
+        display: flex;
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+        
+   }
+   .list-item{
+        color: white;
+   }
+   
+   
+   
+   
+  }
+  
+  
+
